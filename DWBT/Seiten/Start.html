@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <title>Mensa FH Aachen</title>
+    <!-- überlegen Sie, ob Sie die Bootstrap CSS nicht lokal nutzen wollen -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Order css ist nur ein vorschlag, überlegen Sie sich eine gute projektstruktur -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/Seiten/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+
+
+
+        <!--Kopzeile-->
+        <header class="row">
+            <!-- div könnte header sein oder? -->
+            <div class="col-3">
+                <h1>e-Mensa</h1>
+            </div>
+            <nav class="col-5">
+                <ul class="nav">
+                    <!-- die Deko-Striche evtl schöner -->
+                    <li class="nav-item"><a class="nav-link" href="/Seiten/Start.html">Start</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="/Seiten/Produkte.html">Mahlzeiten</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Bestellung</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.fh-aachen.de">FH-Aachen</a></li>
+                </ul>
+            </nav>
+            <div class="col-4">
+                <div class="container">
+                    <form method="get" action="http://www.google.com/search">
+                        <div class="row">
+                            <div class="col-9">
+                                <label class="sr-only" for="suchbegriff">Suchbegriff</label>
+                                <input id="suchbegriff" type="search" class="form-control" name="q" placeholder="Speisen" />
+                            </div>
+                            <div class="col-3">
+                                <button type="submit" class="btn btn-outline-primary"><i class="fa fa-search"></i> </button>
+                                <!-- button zum absenden der vollständigkeit halber? -->
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </header>
+
+
+
+
+
+        <!--Banner-->
+        <div class="row">
+            <div class="col banner">
+                <!-- nutzen Sie ein eigenes Bild und schauen Sie, dass Ihre Dokumente validieren -->
+                <img class="banner" src="/IMG/Banner.PNG" />
+            </div>
+        </div>
+        <!--Bechreibung, Anmeldung-->
+        <div class="row">
+            <div class="col-3">
+                <p>Der Dienst e-Mensa ist noch in der beta. Sie können bereits <a href="/Seiten/Produkte.html"> Mahlzeiten</a> durchstöbern, aber noch nicht bestellen.</p>
+                <p>Registrieren Sie sich <a href="#">hier</a>, um über die Veröffentlung des Dienstes per Mail informiert zu werden. </p>
+            </div>
+            <div class="col-9">
+                <div class="row">
+                    <div class="col-8"><h2>leckeres Essen vorbestellen</h2><p>... und gemeinsam mit Kommilitonen und Freunden essen</p></div>
+                    <div class="col-4 login">
+                        <div class="row">
+                            <button type="button" class="btn btn-outline-primary"><i class="fa fa-hand-o-right"></i> Anmelden</button>
+                        </div>
+                        <div class="row">
+                            <button type="button" class="btn btn-outline-primary"><i class="fa fa-sign-in"></i> Bestellen</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img class="banner" id="salatbar" src="/IMG/banner2.jpg" />
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+        <!--Fußzeile-->
+        <footer class="row">
+            <!-- div könnte header sein oder? -->
+            <div class="col-3">
+                <h3>© 2018 DWBT L. B.</h3>
+            </div>
+            <nav class="col-6">
+                <ul class="nav">
+                    <!-- die Deko-Striche evtl schöner -->
+                    <li class="nav-item"><a class="nav-link" href="#">Login</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Registrierung</a> </li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Zutatenliste</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Impressum</a></li>
+                </ul>
+            </nav>
+            <div class="col-3">
+
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

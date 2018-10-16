@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mensa FH Aachen</title>
+    <!-- überlegen Sie, ob Sie die Bootstrap CSS nicht lokal nutzen wollen -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Order css ist nur ein vorschlag, überlegen Sie sich eine gute projektstruktur -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/Seiten/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <!--Kopzeile-->
+        <header class="row">
+            <!-- div könnte header sein oder? -->
+            <div class="col-3">
+                <h1>e-Mensa</h1>
+            </div>
+            <nav class="col-5">
+                <ul class="nav">
+                    <!-- die Deko-Striche evtl schöner -->
+                    <li class="nav-item"><a class="nav-link" href="/Seiten/Start.html">Start</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="/Seiten/Produkte.html">Mahlzeiten</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Bestellung</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.fh-aachen.de">FH-Aachen</a></li>
+                </ul>
+            </nav>
+            <div class="col-4">
+                <div class="container">
+                    <form method="get" action="http://www.google.com/search">
+                        <div class="row">
+                            <div class="col-9">
+                                <label class="sr-only" for="suchbegriff">Suchbegriff</label>
+                                <input id="suchbegriff" type="search" class="form-control" name="q" placeholder="Speisen" />
+                            </div>
+                            <div class="col-3">
+                                <button type="submit" class="btn btn-outline-primary"><i class="fa fa-search"></i> </button>
+                                <!-- button zum absenden der vollständigkeit halber? -->
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <!--Banner-->
+        <div class="row">
+            <div class="col">
+                <h4> Details für  &ldquo;Bürger&ldquo; </h4>
+            </div>
+            
+        </div>
+        <!--Bechreibung, Anmeldung-->
+        <div class="row">
+            <div class="col-3">                
+               
+                    
+                <fieldset class="Kasten">
+                    <form id="Login">
+                        <label id="h2" form="login">Login</label>
+                        <label for="Benutzer">
+                            Benutzer: <input name="benutzer" id="benutzer" placeholder="Benutzer">
+                        </label>
+
+                        <label for="Passwort">
+                            Passwort: <input name="benutzer" id="benutzer" placeholder="*********">
+                        </label>
+                        <button type="submit" class="btn btn-outline-primary">Anmelden</button>
+                    </form>
+                </fieldset>
+                   
+               
+            </div>
+            <div class="col-6">
+                <img class="banner" src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" />
+                
+            </div>
+            <aside class="col-3">
+                <div class="row">
+                    3,60€
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-outline-dark"><i class="fa fa-shopping-cart"></i>Vorbestellen</button>
+                </div>
+            </aside>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                Melden Sie sich jetzt an, um die wirklich viel günstigeren Preise für Mitarbeiter oder Studenten zu sehen.
+            </div>
+            <div class="col-6">
+
+            </div>
+            <div class="col-3">
+
+            </div>
+        </div>
+        <!--Fußzeile-->
+        <footer class="row">
+            <!-- div könnte header sein oder? -->
+            <div class="col-3">
+                <h3>© 2018 DWBT L. B.</h3>
+            </div>
+            <nav class="col-6">
+                <ul class="nav">
+                    <!-- die Deko-Striche evtl schöner -->
+                    <li class="nav-item"><a class="nav-link" href="#">Login</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Registrierung</a> </li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Zutatenliste</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Impressum</a></li>
+                </ul>
+            </nav>
+            <div class="col-3">
+
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
